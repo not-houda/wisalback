@@ -21,7 +21,7 @@ const ipAddress = '0.0.0.0';
 connectDB()
 
 // middlewares
-app.use(express.json())
+
 app.use(cors({
     origin: ['https://wissalweb2.vercel.app','https://wissalwebb.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
