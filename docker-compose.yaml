@@ -1,0 +1,17 @@
+services:
+  backend:
+    container_name: backend
+    build: 
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 4000:4000
+    environment:
+      JWT_SECRET : "jwt_secret"
+      ADMIN_EMAIL : "admin@example.com"
+      ADMIN_PASSWORD : "greatstack123"
+      MONGODB_URI : "mongodb://root:example@mongo_db:27017/e-commerce?authSource=admin"
+      STRIPE_SECRET_KEY : "-------- Paste Stripe Secret key --------"
+
+      RAZORPAY_KEY_SECRET : '-------- Paste Razorpay Secret key --------'
+      RAZORPAY_KEY_ID : '-------- Paste Razorpay key Id --------'
