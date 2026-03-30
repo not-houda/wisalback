@@ -12,6 +12,8 @@ import path  from 'path'
 
 // App Config
 const app = express()
+app.use(express.json({ limit: '50mb' }))
+app.use(express.urlencoded({ limit: '50mb', extended: true }))
 
 const port = process.env.PORT || 4000
 const ipAddress = '0.0.0.0';
