@@ -21,7 +21,7 @@ connectDB()
 // middlewares
 app.use(express.json())
 app.use(cors({
-    origin: ['https://wissal.dz', 'https://wissalweb2.vercel.app', 'https://wissalweb.vercel.app','https://wissalwebb.vercel.app'],
+    origin: ['https://wissalweb2.vercel.app','https://wissalwebb.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }))
